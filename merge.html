@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas合并多张图片</title>
+	<style>
+		.person-img,.result-img{
+			width: 400px;
+			height: 200px;
+		}
+		.code-img{
+			width: 60px;
+			height: 60px;
+		}
+		.merge{
+			width: 200px;
+			height: 50px;
+			border-radius: 15px;
+			background-color: #367fff;
+		}
+		.box{
+			/*display: none;*/
+			width: 400px;
+			height: 200px;
+			/*border: 1px solid #367fff;*/
+		}
+
+	</style>
+</head>
+<body>
+	<div>
+		<p>图一：</p>
+		<img class='person-img'  src="https://image.ibb.co/f4Lged/2017072615215296mg_ULNAVisju_Wh_D.jpg">
+		<p>图二：</p>
+		<img class='code-img'  src="https://image.ibb.co/dkSoQJ/qrcode_for_gh_2039c29e81ca_430.jpg">
+	</div>
+	<button class='merge' onclick='merge()'>点击合成图片</button>	
+	<p>合成后的图片：</p>
+	<div class='box'>
+	</div>
+	<script src='./merge.js'></script>
+</div>
+</body>
+</html>
